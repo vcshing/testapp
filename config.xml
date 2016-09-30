@@ -1,0 +1,57 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.master2048" version="4.0.1" android-versionCode="4">
+  <name>數字對對碰</name>
+  <description></description>
+  <author href="http://phonegap.com" email="support@phonegap.com"></author>
+  <content src="index.html"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <preference name="StatusBarOverlaysWebView" value="true" />
+  <preference name="orientation" value="Portrait" />
+  <preference name="fullscreen" value="true" />
+
+
+    <preference name="SplashScreenDelay" value="3000" /> <!-- defaults to "3000" -->
+
+
+  <plugin name="com.admob.google" spec="4.0.8" source="pgb" />
+   <plugin name="cordova-plugin-fullscreen" source="npm" />
+     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
+  <icon src="icon.png"/>
+  <platform name="android">
+    <icon src="www/res/icon/android/icon-36-ldpi.png" density="ldpi"/>
+    <icon src="www/res/icon/android/icon-48-mdpi.png" density="mdpi"/>
+    <icon src="www/res/icon/android/icon-72-hdpi.png" density="hdpi"/>
+    <icon src="www/res/icon/android/icon-96-xhdpi.png" density="xhdpi"/>
+    <icon src="www/res/icon/android/icon-144-xxhdpi.png" density="xxhdpi"/>
+    <icon src="www/res/icon/android/icon-192-xxxhdpi.png" density="xxxhdpi"/>
+
+    <splash src="www/res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+    <splash src="www/res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+    <splash src="www/res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+    <splash src="www/res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+
+  </platform>
+  <platform name="ios">
+  
+  </platform>
+  <platform name="wp8">
+
+  </platform>
+  <platform name="windows">
+
+  </platform>
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+</widget>
